@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page Role</title>
+    <style>
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Trebuchet MS', sans-serif;
+            background-color: whitesmoke;
+            overflow: hidden;
+        }
+
+        nav {
+            width: 250px;
+            position: fixed;
+            left: 0;
+            top: 0;
+            height: 100%;
+            background-color: green;
+            padding-top: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            padding: 10px 0;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            display: block;
+            transition: all 0.3s ease;
+        }
+
+        a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        h1 {
+            margin-left: 289px;
+            animation: slideInFromLeft 1s ease-in-out;
+        }
+
+        @keyframes slideInFromLeft {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        footer {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            font-family: 'Trebuchet MS', sans-serif;
+            font-size: 14px;
+        }
+
+        .content {
+            padding: 20px;
+            margin-left: 270px;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>ROLE</h1>
+    <nav>
+        <ul>
+            <li><a href="?menu=home"><b>➤ Admin</b></a></li>
+            <li><a href="?menu=kk2"><b>➤ User</b></a></li>
+        </ul>
+    </nav>
+    <div class="content fade-in">
+        <p>Pilih role Anda.</p>
+    </div>
+<footer>2272027 - Bertrand Christian</footer>
+</body>
+</html>

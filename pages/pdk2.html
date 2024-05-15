@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page Penduduk</title>
+    <style>
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Trebuchet MS', sans-serif;
+            background-color: papayawhip;
+            overflow: hidden;
+        }
+
+        nav {
+            width: 250px;
+            position: fixed;
+            left: 0;
+            top: 0;
+            height: 100%;
+            background-color: darkred;
+            padding-top: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            padding: 10px 0;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            display: block;
+            transition: all 0.3s ease;
+        }
+
+        a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        h1 {
+            margin-left: 289px;
+            animation: slideInFromLeft 1s ease-in-out;
+        }
+
+        @keyframes slideInFromLeft {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        footer {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            font-family: 'Trebuchet MS', sans-serif;
+            font-size: 14px;
+        }
+
+        table {
+            margin: 50px 260px;
+            border-collapse: collapse;
+            width: calc(100% - 270px);
+        }
+
+        .button-container {
+            margin-left: 290px;
+            margin-top: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: green;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        .button2 {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: yellow;
+            color: black;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        .button3 {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: red;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        .button-container2 {
+            margin-left: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .button:hover {
+            background-color: black;
+        }
+
+        .button2:hover {
+            background-color: grey;
+        }
+
+        .button3:hover {
+            background-color: black;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            color: white;
+            background-color: darkred;
+            text-align:center;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #ffffff;
+        }
+
+    </style>
+</head>
+<body>
+<h1>PENDUDUK</h1>
+<nav>
+    <ul>
+        <li><a href="?menu=kk2"><b>➤ Kartu Keluarga</b></a></li>
+        <li><a href="?menu=role"><b>➤ Log Out</b></a></li>
+    </ul>
+</nav>
+<table id="kartu-keluarga">
+    <tr>
+        <th>NIK</th>
+        <th>Nama</th>
+        <th>Jenis Kelamin</th>
+        <th>Tempat Lahir</th>
+        <th>Pendidikan</th>
+        <th>No. Kartu Keluarga</th>
+    </tr>
+    <tr>
+        <td>3201728196384731</td>
+        <td>Budi Santoso</td>
+        <td>Laki-laki</td>
+        <td>Jakarta</td>
+        <td>S1</td>
+        <td>1234567890123456</td>
+    </tr>
+    <tr>
+        <td>3246788191915543</td>
+        <td>Siti Aminah</td>
+        <td>Perempuan</td>
+        <td>Bandung</td>
+        <td>SMA</td>
+        <td>1934762855903247</td>
+    </tr>
+    <tr>
+        <td>3201745691912664</td>
+        <td>Agus Widodo</td>
+        <td>Laki-laki</td>
+        <td>Bekasi</td>
+        <td>S2</td>
+        <td>6321598478023546</td>
+    </tr>
+    <tr>
+        <td>3201728191912020</td>
+        <td>Surya Prata</td>
+        <td>Laki-laki</td>
+        <td>Semarang</td>
+        <td>D3</td>
+        <td>2345678909876512</td>
+    </tr>
+</table>
+<footer>2272027 - Bertrand Christian</footer>
+</body>
+</html>
